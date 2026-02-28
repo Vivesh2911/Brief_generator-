@@ -8,7 +8,7 @@ import Header from './components/Header';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const API = 'http://127.0.0.1:5000/api';
+const API = 'https://specforge-zzmi.onrender.com/api';
 
 export default function App() {
   const [briefs, setBriefs] = useState([]);
