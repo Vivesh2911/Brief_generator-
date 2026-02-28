@@ -6,8 +6,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
-
+CORS(app, origins=["http://localhost:3000", "https://specforge-zzmi.onrender.com", "https://your-vercel-url.vercel.app"])
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(BASE_DIR, 'briefs.db')}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
